@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Project_Client.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <link href="StyleSheet1.css" rel='stylesheet' type='text/css'/>
+    <style type="text/css">
+        .auto-style10 {
+            width: 1348px;
+            height: 170px;
+            background: #000;
+            color: #fff;
+        }
+        .auto-style20 {
+            color: #FF0000;
+        }
+        .auto-style30 {
+            font-size: x-small;
+        }
+        .auto-style40 {
+            color: #FF0000;
+            font-weight: bold;
+            font-size: medium;
+            background-color: #000000;
+        }
+
+        .auto-style5 {
+            font-size: xx-large;
+        }
+    
+    </style>
+</head>
+<body class="master">
+    <form id="form1" runat="server">
+         <div class="auto-style10">
+         
+         <h1 class="auto-style20">&nbsp;&nbsp;</h1>
+         <h1 class="auto-style20">
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <asp:Image ID="Image2" runat="server" CssClass="auto-style30" Height="72px" Width="193px" ImageUrl="~/company_logo.jpeg" />
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="auto-style5">CloudWay</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><asp:Button ID="Button1" runat="server" CssClass="auto-style40" Height="59px" Text="Login/Sign Up" Width="300px" OnClick="Button1_Click" ValidationGroup="a" />
+                            </strong>&nbsp;&nbsp;&nbsp;&nbsp; <strong>
+             
+                            </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</h1>
+         <p class="auto-style20">&nbsp;</p>
+         <h1 class="auto-style20">
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+             </asp:ContentPlaceHolder>
+         </h1>
+         <p class="auto-style20">&nbsp;</p>
+         
+  
+</div>
+         
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+   </form>
+</body>
+</html>

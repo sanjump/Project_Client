@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="Project_Client.Site2" %>
+<!DOCTYPE html>
+
+ 
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-styleA {
+            width: 1566px;
+            height: 190px;
+            background: #000;
+            color: #fff;
+        }
+        .auto-styleB {
+            color: #FF0000;
+        }
+        .auto-styleC {
+            color: #FF0000;
+            font-weight: bold;
+            font-size: medium;
+            background-color: #000000;
+        }
+        .auto-styleD {
+            font-size: xx-large;
+        }
+        .auto-styleE {
+            width: 100%;
+            height: 186px;
+            background: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+    <form id="form1" runat="server">
+    <div class="auto-styleE">
+         
+         <h1 class="auto-styleB">&nbsp;&nbsp;</h1>
+         <h1 class="auto-styleB">
+             &nbsp;&nbsp;&nbsp;&nbsp;<asp:Image ID="Image1" runat="server" Height="77px" ImageUrl="~/company_logo.jpeg" Width="164px" />
+             &nbsp; <span class="auto-styleD">CloudWay </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>
+             <asp:Button ID="Button1" runat="server" CssClass="auto-styleC" Height="49px" Text="My Bookings" Width="148px" />
+             </strong>&nbsp;&nbsp;&nbsp;&nbsp;<strong><asp:Button ID="Button2" runat="server" CssClass="auto-styleC" Height="49px" Text="Flight Search" Width="148px" />
+             &nbsp;&nbsp;
+             <asp:Button ID="Button3" runat="server" CssClass="auto-styleC" Height="49px" Text="About Us" Width="148px" />
+             &nbsp;&nbsp;
+             <asp:Button ID="Button4" runat="server" CssClass="auto-styleC" Height="49px" Text="Logout" Width="148px" />
+             </strong>&nbsp;&nbsp; &nbsp;</h1>
+         <p class="auto-styleB">
+             &nbsp;</p>
+         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+             </asp:ContentPlaceHolder>
+  
+</div>
+
+ 
+
+</form>
+
+ 
+
+
+</html>
+             
+        
