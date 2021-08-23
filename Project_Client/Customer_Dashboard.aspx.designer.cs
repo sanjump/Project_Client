@@ -11,7 +11,7 @@ namespace Project_Client
 {
 
 
-    public partial class WebForm2
+    public partial class Customer_Dashboard
     {
 
         /// <summary>

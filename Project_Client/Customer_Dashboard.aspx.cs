@@ -4,12 +4,13 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Project_Client.DAL;
 using Project_Client.Model;
+using Project_Client.DAL;
+
 
 namespace Project_Client
 {
-    public partial class WebForm2 : System.Web.UI.Page
+    public partial class Customer_Dashboard : System.Web.UI.Page
     {
         Customer_DAL dl = new Customer_DAL();
         protected void Page_Load(object sender, EventArgs e)
@@ -71,7 +72,7 @@ namespace Project_Client
                 string date = row.Cells[8].Text.ToString();
                 FlightDetails obj1 = dl.searchflight1(flightid, date);
                 Session["Flight_details"] = obj1;
-                Response.Redirect("Flight.aspx");
+                Response.Redirect("Book.aspx");
 
             }
         }

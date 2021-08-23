@@ -31,7 +31,7 @@ namespace Project_Client
             if (obj != null && obj.password == pwd)
             {
                 
-                    Response.Redirect("Registration.aspx");
+                    Response.Redirect("Customer_Dashboard.aspx");
 
             }
 

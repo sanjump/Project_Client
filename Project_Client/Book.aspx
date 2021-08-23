@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site2.Master" AutoEventWireup="true" CodeBehind="Flight.aspx.cs" Inherits="Project_Client.Flight" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site2.Master" AutoEventWireup="true" CodeBehind="Book.aspx.cs" Inherits="Project_Client.Flight" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -115,6 +115,7 @@
         </style>
 </head>
 <body>
+    
    
         <div>
             <table class="auto-style20">
@@ -140,19 +141,21 @@
                     </span></td>
             </tr>
             <tr>
-                <td class="auto-style13"><strong>Number of Travellers</strong></td>
+                <td class="auto-style13">
+                    <asp:Label ID="Label6" runat="server" Text="No of Travellers" ForeColor="Black"></asp:Label>
+                </td>
                 <td class="auto-style14">
                     <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style13"><strong>Cost per Ticket</strong></td>
+                <td class="auto-style13"><asp:Label ID="Label7" runat="server" Text="Cost per Ticket" ForeColor="Black"></asp:Label></td>
                 <td class="auto-style14">
                     <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style11"><strong>Total Cost</strong></td>
+                <td class="auto-style11"><asp:Label ID="Label8" runat="server" Text="Total Cost" ForeColor="Black"></asp:Label></td>
                 <td class="auto-style12">
                     <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
                 </td>
@@ -178,13 +181,13 @@
         <br />
         <br />
             <strong>
-            <asp:Button ID="Button1" runat="server" CssClass="auto-style23" Height="33px" Text="Book Now" Width="126px"  />
+            <asp:Button ID="Button1" runat="server" CssClass="auto-style23" Height="33px" Text="Book Now" Width="126px" OnClick="Button1_Click"  />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Label ID="Label5" runat="server" Text="Label" ForeColor="Black"></asp:Label>
         <br />
         <br />
             </strong>
-   
+  
 </body>
 </html>
 </asp:Content>
