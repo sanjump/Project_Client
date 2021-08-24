@@ -30,7 +30,8 @@ namespace Project_Client
             obj = dl.GetCustomerById(username);
             if (obj != null && obj.password == pwd)
             {
-                
+
+                    Session["uname"] = username;
                     Response.Redirect("Customer_Dashboard.aspx");
 
             }

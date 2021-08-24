@@ -40,7 +40,7 @@
             font-size: x-large;
             height: 36px;
             background-color: #FFFFFF;
-            width: 683px;
+            width: 336px;
         }
         .auto-style25 {
             text-align: center;
@@ -53,7 +53,7 @@
             font-size: x-large;
             height: 35px;
             background-color: #FFFFFF;
-            width: 683px;
+            width: 336px;
         }
         .auto-style27 {
             text-align: center;
@@ -72,9 +72,6 @@
             text-align: center;
             height: 92px;
             background-color: #2F7FAD;
-        }
-        .auto-style31 {
-            margin-left: 760px;
         }
         .auto-style32 {
             color: #FFFFFF;
@@ -95,37 +92,57 @@
                     </span></td>
             </tr>
             <tr>
-                <td class="auto-style24">Name</td>
+                <td class="auto-style24">
+                    <asp:Label ID="Label6" runat="server" ForeColor="Black" Text="Name"></asp:Label>
+                </td>
                 <td class="auto-style25">
                     <asp:TextBox ID="TextBox4" runat="server" Width="202px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style26">Gender</td>
+                <td class="auto-style26">
+                    <asp:Label ID="Label7" runat="server" ForeColor="Black" Text="Age"></asp:Label>
+                </td>
                 <td class="auto-style27">
                     <asp:TextBox ID="TextBox5" runat="server" Width="202px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style26">Age</td>
+                <td class="auto-style26">
+                    <asp:Label ID="Label8" runat="server" ForeColor="Black" Text="Gender"></asp:Label>
+                </td>
                 <td class="auto-style27">
-                    <asp:TextBox ID="TextBox6" runat="server" Width="202px"></asp:TextBox>
+                    
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    
+                    <asp:RadioButtonList ID="RadioButtonList1" runat="server" ForeColor="Black" Height="22px" RepeatDirection="Horizontal" Width="433px">
+                        <asp:ListItem>Female</asp:ListItem>
+                        <asp:ListItem>Male</asp:ListItem>
+                        <asp:ListItem>Others</asp:ListItem>
+                    </asp:RadioButtonList>
+
                 </td>
             </tr>
             <tr>
-                <td class="auto-style26">Aadhar Number</td>
+                <td class="auto-style26">
+                    <asp:Label ID="Label9" runat="server" ForeColor="Black" Text="Aadhar Number"></asp:Label>
+                </td>
                 <td class="auto-style27">
                     <asp:TextBox ID="TextBox7" runat="server" Width="202px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style26">Phone Number</td>
+                <td class="auto-style26">
+                    <asp:Label ID="Label10" runat="server" ForeColor="Black" Text="Phone"></asp:Label>
+                </td>
                 <td class="auto-style27">
                     <asp:TextBox ID="TextBox8" runat="server" Width="202px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style26">Email ID</td>
+                <td class="auto-style26">
+                    <asp:Label ID="Label11" runat="server" ForeColor="Black" Text="Email"></asp:Label>
+                </td>
                 <td class="auto-style27">
                     <asp:TextBox ID="TextBox9" runat="server" Width="202px"></asp:TextBox>
                 </td>
@@ -138,28 +155,25 @@
         <br />
         <table class="auto-style4">
             <tr>
-                <td class="auto-style30"><span class="auto-style11"><strong>MEAL PREFERENCE :</strong></span><br class="auto-style29" />
+                <td class="auto-style30"><span class="auto-style11"><strong>MEAL PREFERENCE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></span><br class="auto-style29" />
+                    <asp:CheckBoxList ID="CheckBoxList2" runat="server" Height="50px" OnSelectedIndexChanged="CheckBoxList2_SelectedIndexChanged" RepeatDirection="Horizontal" Width="881px">
+                        <asp:ListItem>Veg</asp:ListItem>
+                        <asp:ListItem>Non Veg</asp:ListItem>
+                    </asp:CheckBoxList>
                     <br class="auto-style29" />
                     <span class="auto-style29">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
-                    <asp:Label ID="Label5" runat="server" CssClass="auto-style29" Text="Label"></asp:Label>
                     <br class="auto-style28" />
                 </td>
             </tr>
         </table>
         <p>
-            &nbsp;</p>
-        <table class="auto-style4">
-            <tr>
-                
-            </tr>
-        </table>
+            &nbsp;<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="Button1" runat="server" CssClass="auto-style32" Text="Continue to Seat selection" Width="181px" OnClick="Button1_Click" />
+            </strong></p>
         <p>
             &nbsp;</p>
-        <p class="auto-style31">
-            <strong>
-            <asp:Button ID="Button1" runat="server" CssClass="auto-style32" Text="Continue to Seat selection" Width="181px" OnClick="Button1_Click" />
-            </strong>
-        </p>
+        <p>
+            &nbsp;</p>
   
 </body>
 </html>

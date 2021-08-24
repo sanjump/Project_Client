@@ -257,6 +257,7 @@
     </Compile>
     <Compile Include="Model\Customer.cs" />
     <Compile Include="Model\FlightDetails.cs" />
+    <Compile Include="Model\PassengerDetails.cs" />
     <Compile Include="Model\Seats.cs" />
     <Compile Include="PassengerDetails.aspx.cs">
       <DependentUpon>PassengerDetails.aspx</DependentUpon>
