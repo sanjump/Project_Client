@@ -13,5 +13,15 @@ namespace Project_Client
         {
 
         }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Customer_Dashboard.aspx");
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Home_Login.aspx");
+        }
     }
 }

@@ -20,17 +20,21 @@ namespace Project_Client
                 FlightDetails obj = (FlightDetails)Session["Flight_details"];
 
                 FlightDetails obj1 = dl.GetFlightById(obj.Flight_Id, obj.Date);
+                string status = "";
                 if (obj.Total_Seats > 0)
                 {
                     Label5.Text = "Seats Available - " + obj.Total_Seats;
+                    status = "Confirmed";
                 }
 
                 else
                 {
                     int waiting = (obj.Total_Seats * -1) + 1;
                     Label5.Text = "Waiting list - " + waiting;
+                    status = waiting.ToString();
                 }
 
+                Session["status"] = status;
                 Label1.Text = obj.Flight_Name;
                 Label2.Text = obj.Departure;
                 Label3.Text = obj.Duration;
@@ -39,12 +43,14 @@ namespace Project_Client
                 TextBox2.Text = obj.Price;
                 TextBox3.Text = obj.Price;
 
+
             }
 
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            
             Response.Redirect("PassengerDetails.aspx");
         }
     }

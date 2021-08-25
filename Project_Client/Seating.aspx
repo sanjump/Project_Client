@@ -13,19 +13,22 @@
             left: 76px;
             top: 0px;
         }
+        .auto-style2 {
+            font-size: xx-large;
+        }
     </style>
    
 
 </head>
 <body>
     <form id="form1" runat="server">
-       <h2>Bearth Abbrevations</h2>
+       <h2>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <asp:Label ID="Label1" runat="server" Text="Label" CssClass="auto-style2" ForeColor="White"></asp:Label>
+        </h2>
 
-<ul class="Bearth">
-  <li>Unavailable</li>
-  <li>Available small</li>
-  <li>Availavle Large</li>
-</ul>  
+        <p>
+            &nbsp;</p>
 
         <div id="wings_up"></div>
 <div id="seatmap" class="auto-style1">
@@ -94,7 +97,7 @@
                 <td></td>
             </tr>
             <tr>
-                <td id="J11" title="1J"  class="seatAvailable">
+                <td title="1J"  class="seatAvailable">
                     <asp:RadioButton ID="J1" Text="J1"  runat="server" GroupName="s" /></td>
                  <td title="1J" class="seatAvailable">
                     <asp:RadioButton ID="J2" Text="J2" runat="server" GroupName="s" /></td>
@@ -103,7 +106,7 @@
                 
             </tr>
             <tr>
-                <td id="G11" title ="1G"  class="seatAvailable"> <asp:RadioButton ID="G1" runat="server" GroupName="s" Text="G1" /></td>
+                <td  title ="1G"  class="seatAvailable"> <asp:RadioButton ID="G1" runat="server" GroupName="s" Text="G1" /></td>
                  <td title="1J" class="seatAvailable">
                    
                     <asp:RadioButton ID="G2" Text="G2" runat="server" GroupName="s" /></td>

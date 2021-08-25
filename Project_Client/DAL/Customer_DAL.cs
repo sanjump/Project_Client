@@ -35,6 +35,21 @@ namespace Project_Client.DAL
             return flag;
         }
 
+        public string RegisterPassenger(Passenger obj)
+        {
+            string flag = "false";
+            string data = JsonConvert.SerializeObject(obj);
+            StringContent content = new StringContent(data, Encoding.UTF8, "application/json");
+            HttpResponseMessage response = cl.PostAsync(cl.BaseAddress + "/Customer/PassengerPost1", content).Result;
+
+            if (response.IsSuccessStatusCode)
+            {
+                flag = "true";
+
+            }
+            return flag;
+        }
+
         public Customer GetCustomerById(string username)
         {
            
@@ -83,6 +98,21 @@ namespace Project_Client.DAL
             return flag;
         }
 
+        public string ReduceSeat(string flight_id, string date, int Total_Seats)
+        {
+            string flag = "false";
+            string data = JsonConvert.SerializeObject(Total_Seats);
+            StringContent content = new StringContent(data, Encoding.UTF8, "application/json");
+            HttpResponseMessage response = cl.PutAsync(cl.BaseAddress + "/Customer/ReduceSeat?flight_id=" + flight_id + "&date=" + date, content).Result;
+
+            if (response.IsSuccessStatusCode)
+            {
+                flag = "true";
+
+            }
+            return flag;
+        }
+
         public FlightDetails GetFlightById(string flight_id,string date)
         {
 
@@ -116,6 +146,8 @@ namespace Project_Client.DAL
             return obj1;
         }
 
+
+
         
 
 
@@ -143,6 +175,21 @@ namespace Project_Client.DAL
             {
                 string data = response.Content.ReadAsStringAsync().Result;
                 obj1 = JsonConvert.DeserializeObject<List<Seats>>(data);
+
+            }
+
+            return obj1;
+        }
+
+        public List<FlightSeat> SearchSeats1(string flight_id, string date)
+        {
+
+            List<FlightSeat> obj1 = new List<FlightSeat>();
+            HttpResponseMessage response = cl.GetAsync(cl.BaseAddress + "/customer/getseatdetails1?flightid=" + flight_id + "&date=" + date).Result;
+            if (response.IsSuccessStatusCode)
+            {
+                string data = response.Content.ReadAsStringAsync().Result;
+                obj1 = JsonConvert.DeserializeObject<List<FlightSeat>>(data);
 
             }
 

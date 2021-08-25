@@ -155,6 +155,25 @@ select:focus {
             padding-left: 15px;
             padding-right: 15px;
         }
+        .auto-style2 {
+            position: relative;
+            width: 30%;
+            min-height: 1px;
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 33.333333%;
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+            display: inline-block;
+            float: left;
+            left: 1px;
+            top: 0px;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 15px;
+            margin-bottom: 0;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
         </style>
 
 
@@ -187,19 +206,34 @@ select:focus {
             <div class="col-sm-4"> 
                 <asp:Label ID="Label1" runat="server" Font-Bold="True" Text="From"></asp:Label>
                 <asp:DropDownList ID="DropDownList1" runat="server"  class="browser-default custom-select mb-4">
+                    <asp:ListItem>--Select--</asp:ListItem>
                     <asp:ListItem>Chennai</asp:ListItem>
                     <asp:ListItem>Agra</asp:ListItem>
                     <asp:ListItem>Delhi</asp:ListItem>
                      <asp:ListItem>Trivandrum</asp:ListItem>
                 </asp:DropDownList>
             </div>
-            <div class="col-sm-4"> 
+            <div class="auto-style2"> 
 &nbsp;<asp:Label ID="Label2" runat="server" Font-Bold="True" Text="To"></asp:Label>
                 <asp:DropDownList ID="DropDownList2" runat="server" class="browser-default custom-select mb-4">
+                     <asp:ListItem>--Select--</asp:ListItem>
                     <asp:ListItem>Chandigarh</asp:ListItem>
                     <asp:ListItem>Pune</asp:ListItem>
                     <asp:ListItem>Ahmedabad</asp:ListItem>
                       <asp:ListItem>Delhi</asp:ListItem>
+                </asp:DropDownList>
+                 </div> 
+              <div class="auto-style2"> 
+&nbsp;<asp:Label ID="Label4" runat="server" Font-Bold="True" Text="To"></asp:Label>
+                <asp:DropDownList ID="DropDownList3" runat="server" class="browser-default custom-select mb-4">
+                     <asp:ListItem>--Select--</asp:ListItem>
+                    <asp:ListItem>1</asp:ListItem>
+                    <asp:ListItem>1</asp:ListItem>
+                    <asp:ListItem>1</asp:ListItem>
+                    <asp:ListItem>2</asp:ListItem>
+                    <asp:ListItem>3</asp:ListItem>
+                      <asp:ListItem>4</asp:ListItem>
+                    <asp:ListItem>5</asp:ListItem>
                 </asp:DropDownList>
                  </div> 
             

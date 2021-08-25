@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
     <title></title>
     <style type="text/css">
@@ -56,6 +56,9 @@
             color: #FFFFFF;
             background-color: #2F7FAD;
         }
+        .auto-style16 {
+            margin-left: 0px;
+        }
     </style>
 </head>
 <body>
@@ -67,14 +70,12 @@
                 <br />
                 METHOD OF PAYMENT</span></strong><span class="auto-style14">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <br />
-                </span>
-                <br />
-&nbsp;&nbsp;&nbsp;&nbsp; <strong>
-                <asp:RadioButton ID="RadioButton5" runat="server" CssClass="auto-style8" GroupName="2" Text="UPI" />
+            &nbsp;&nbsp;&nbsp;&nbsp; <strong>
+                <asp:RadioButton ID="RadioButton5" runat="server" CssClass="auto-style8" GroupName="2" Text="UPI" ForeColor="Black" />
                 <span class="auto-style8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
-                <asp:RadioButton ID="RadioButton6" runat="server" CssClass="auto-style8" GroupName="2" Text="CREDIT/DEBIT CARD" />
+                <asp:RadioButton ID="RadioButton6" runat="server" CssClass="auto-style8" GroupName="2" Text="CREDIT/DEBIT CARD" ForeColor="Black" />
                 <span class="auto-style8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
-                <asp:RadioButton ID="RadioButton7" runat="server" CssClass="auto-style8" GroupName="2" Text="NET BANKING" />
+                <asp:RadioButton ID="RadioButton7" runat="server" CssClass="auto-style8" GroupName="2" Text="NET BANKING" ForeColor="Black" />
                 <br />
                 <br />
                 <span class="auto-style5"><span class="auto-style6">
@@ -84,6 +85,12 @@
             </div>
             <table class="auto-style1">
                 <tr>
+                    <td class="auto-style4"><strong><span class="auto-style14">
+                        <asp:Button ID="Button5" runat="server" CssClass="auto-style16" Height="169px" Text="Button" Width="355px" />
+                        <br />
+                        <asp:Button ID="Button6" runat="server" CssClass="auto-style16" Height="169px" Text="Button" Width="355px" />
+                        <br />
+                        <asp:Button ID="Button7" runat="server" CssClass="auto-style16" Height="169px" Text="Button" Width="355px" />
                     <td class="auto-style4"><strong>UPI</strong></td>
                     <td class="auto-style2">ENTER UPI ID:&nbsp;
                         <asp:TextBox ID="TextBox1" runat="server" Width="394px"></asp:TextBox>

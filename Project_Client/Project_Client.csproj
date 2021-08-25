@@ -111,6 +111,15 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="admin.png" />
+    <Content Include="Admin_AddFlights.aspx" />
+    <Content Include="Admin_AllFlights.aspx" />
+    <Content Include="Admin_Dashboard.aspx" />
+    <Content Include="Admin_FChart.aspx" />
+    <Content Include="Admin_FDelete.aspx" />
+    <Content Include="Admin_ForgotPassword.aspx" />
+    <Content Include="Admin_Login.aspx" />
+    <Content Include="Admin_UpdateFlight.aspx" />
+    <Content Include="Admin_ViewAll.aspx" />
     <Content Include="Assets\admin.png" />
     <Content Include="Assets\avatar1.jpeg" />
     <Content Include="Assets\Capture.JPG" />
@@ -158,6 +167,7 @@
     <Content Include="StyleSheet3.css" />
     <Content Include="Seating.aspx" />
     <Content Include="WebForm2.aspx" />
+    <Content Include="WebForm3.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -193,6 +203,69 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin_AddFlights.aspx.cs">
+      <DependentUpon>Admin_AddFlights.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_AddFlights.aspx.designer.cs">
+      <DependentUpon>Admin_AddFlights.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_AllFlights.aspx.cs">
+      <DependentUpon>Admin_AllFlights.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_AllFlights.aspx.designer.cs">
+      <DependentUpon>Admin_AllFlights.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Dashboard.aspx.cs">
+      <DependentUpon>Admin_Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Dashboard.aspx.designer.cs">
+      <DependentUpon>Admin_Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_FChart.aspx.cs">
+      <DependentUpon>Admin_FChart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_FChart.aspx.designer.cs">
+      <DependentUpon>Admin_FChart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_FDelete.aspx.cs">
+      <DependentUpon>Admin_FDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_FDelete.aspx.designer.cs">
+      <DependentUpon>Admin_FDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_ForgotPassword.aspx.cs">
+      <DependentUpon>Admin_ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ForgotPassword.aspx.designer.cs">
+      <DependentUpon>Admin_ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Login.aspx.cs">
+      <DependentUpon>Admin_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_Login.aspx.designer.cs">
+      <DependentUpon>Admin_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_UpdateFlight.aspx.cs">
+      <DependentUpon>Admin_UpdateFlight.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_UpdateFlight.aspx.designer.cs">
+      <DependentUpon>Admin_UpdateFlight.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_ViewAll.aspx.cs">
+      <DependentUpon>Admin_ViewAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_ViewAll.aspx.designer.cs">
+      <DependentUpon>Admin_ViewAll.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -216,6 +289,7 @@
     <Compile Include="Customer_Dashboard.aspx.designer.cs">
       <DependentUpon>Customer_Dashboard.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DAL\Admin_DAL.cs" />
     <Compile Include="DAL\Customer_DAL.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -255,9 +329,11 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Model\admin.cs" />
     <Compile Include="Model\Customer.cs" />
     <Compile Include="Model\FlightDetails.cs" />
-    <Compile Include="Model\PassengerDetails.cs" />
+    <Compile Include="Model\FlightSeat.cs" />
+    <Compile Include="Model\Passenger.cs" />
     <Compile Include="Model\Seats.cs" />
     <Compile Include="PassengerDetails.aspx.cs">
       <DependentUpon>PassengerDetails.aspx</DependentUpon>
@@ -302,6 +378,13 @@
     <Compile Include="Site2.Master.designer.cs">
       <DependentUpon>Site2.Master</DependentUpon>
     </Compile>
+    <Compile Include="Site3.Master.cs">
+      <DependentUpon>Site3.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site3.Master.designer.cs">
+      <DependentUpon>Site3.Master</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -323,6 +406,13 @@
     <Compile Include="WebForm2.aspx.designer.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -333,6 +423,7 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
     <Content Include="Site1.Master" />
     <Content Include="Site2.Master" />
+    <Content Include="Site3.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

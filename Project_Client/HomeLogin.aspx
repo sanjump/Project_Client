@@ -42,7 +42,7 @@
         </div>
             <div class="content">
                    <p> <img class="card-img-top" src="admin.png" alt="Card image" style="width:56%"/></p>
-                <asp:LinkButton ID="LinkButton2" runat="server">ClickHere</asp:LinkButton>
+                <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">ClickHere</asp:LinkButton>
                 </div>
             </div>
             </div>

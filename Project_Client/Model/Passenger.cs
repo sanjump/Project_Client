@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Project_Client.Model
 {
-    public class PassengerDetails
+    public class Passenger
     {
         public string username { get; set; }
         public string Passenger_id { get; set; }

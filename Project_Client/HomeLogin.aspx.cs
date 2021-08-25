@@ -23,5 +23,10 @@ namespace Project_Client
         {
             Response.Redirect("Registration.aspx");
         }
+
+        protected void LinkButton2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Admin_Login.aspx");
+        }
     }
 }

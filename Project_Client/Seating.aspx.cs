@@ -16,123 +16,28 @@ namespace Project_Client
         protected void Page_Load(object sender, EventArgs e)
 
         {
-           
-            string[] str = new string[] { "J1", "J2", "J4", "G1", "G2", "G4", "F1", "F2", "F4",
-            "E1","E2","E4","D1","D2","D4","C1","C2","C4","A1","A2","A4"};
+
+            Label1.Visible = false;
             FlightDetails obj = (FlightDetails)Session["Flight_details"];
 
-          
+            List<FlightSeat> ls1 = dl.SearchSeats1(obj.Flight_Id, obj.Date);
 
-            List<Seats> ls = dl.SearchSeats(obj.Flight_Id, obj.Date);
+            foreach (FlightSeat x in ls1)
+            {
+                if (x.Value == 1)
+                {
+                    var selectedRadioButton = form1.Controls.OfType<RadioButton>().FirstOrDefault(rb => rb.Text == x.Seat_no.ToString());
+                    selectedRadioButton.Visible = true;
 
-            if (ls[0].J1 == 1)
-            {
-                J1.Visible = true;
-               
-            }
-            if (ls[0].J1 == 0)
-            {
-                J1.Visible = false;
-                
-            }
-            if (ls[0].J2 == 1)
-            {
-                J2.Visible = true;
-            }
-            if (ls[0].J2 == 0)
-            {
-                J2.Visible = false;
-            }
-            if (ls[0].J4 == 1)
-            {
-                J4.Visible = true;
-            }
-            if (ls[0].J4 == 0)
-            {
-                J4.Visible = false;
-            }
-            if (ls[0].G1 == 1)
-            {
-                G1.Visible = true;
+                }
 
+                else
+                {
+                    var selectedRadioButton = form1.Controls.OfType<RadioButton>().FirstOrDefault(rb => rb.Text == x.Seat_no.ToString());
+                    selectedRadioButton.Visible = false;
+                }
             }
-            if (ls[0].G1 == 0)
-            {
-                G1.Visible = false;
 
-            }
-            if (ls[0].G2 == 1)
-            {
-                G2.Visible = true;
-            }
-            if (ls[0].G2 == 0)
-            {
-                G2.Visible = false;
-            }
-            if (ls[0].G4 == 1)
-            {
-                G4.Visible = true;
-            }
-            if (ls[0].F1 == 0)
-            {
-                F1.Visible = false;
-            }
-            if (ls[0].F2 == 1)
-            {
-                F2.Visible = true;
-            }
-            if (ls[0].F4 == 0)
-            {
-                F4.Visible = false;
-            }
-            if (ls[0].E1 == 1)
-            {
-                E1.Visible = true;
-            }
-            if (ls[0].E2 == 0)
-            {
-                E2.Visible = false;
-            }
-            if (ls[0].E4 == 1)
-            {
-                E4.Visible = true;
-            }
-            if (ls[0].D1 == 0)
-            {
-                D1.Visible = false;
-            }
-            if (ls[0].D2 == 1)
-            {
-                D2.Visible = true;
-            }
-            if (ls[0].D4 == 0)
-            {
-                D4.Visible = false;
-            }
-            if (ls[0].C1 == 1)
-            {
-                C1.Visible = true;
-            }
-            if (ls[0].C2 == 0)
-            {
-                C2.Visible = false;
-            }
-            if (ls[0].C4 == 1)
-            {
-                C4.Visible = true;
-            }
-            if (ls[0].A1 == 0)
-            {
-                A1.Visible = false;
-            }
-            if (ls[0].A2 == 1)
-            {
-                A2.Visible = true;
-            }
-            if (ls[0].A4 == 0)
-            {
-                A4.Visible = false;
-            }
 
 
         }
@@ -152,9 +57,22 @@ namespace Project_Client
         protected void Button1_Click1(object sender, EventArgs e)
         {
             string seat_no = GetRadioValue(form1.Controls, "s");
-            FlightDetails obj = (FlightDetails)Session["Flight_details"];
-            dl.SetSeat(obj.Flight_Id, obj.Date, seat_no);
-            Response.Redirect("Payment.aspx");
+            if (seat_no == string.Empty)
+            {
+                Label1.Visible = true;
+                Label1.Text = "Select Seat";
+            }
+            else
+            {
+                FlightDetails obj = (FlightDetails)Session["Flight_details"];
+                dl.SetSeat(obj.Flight_Id, obj.Date, seat_no);
+                Passenger obj1 = (Passenger)Session["Passenger_details"];
+                obj1.Seat = seat_no;
+                string flag = dl.RegisterPassenger(obj1);
+                obj.Total_Seats = obj.Total_Seats - 1;
+                dl.ReduceSeat(obj.Flight_Id, obj.Date, obj.Total_Seats);
+                Response.Redirect("Payment.aspx");
+            }
         }
     }
 }

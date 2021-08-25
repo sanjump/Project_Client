@@ -96,7 +96,10 @@
                     <asp:Label ID="Label6" runat="server" ForeColor="Black" Text="Name"></asp:Label>
                 </td>
                 <td class="auto-style25">
+                    &nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:TextBox ID="TextBox4" runat="server" Width="202px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox4"  Display = "Dynamic" ErrorMessage="* Name Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 </td>
             </tr>
             <tr>
@@ -104,7 +107,10 @@
                     <asp:Label ID="Label7" runat="server" ForeColor="Black" Text="Age"></asp:Label>
                 </td>
                 <td class="auto-style27">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:TextBox ID="TextBox5" runat="server" Width="202px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox5"  Display = "Dynamic" ErrorMessage="* Age Required" ForeColor="Red"></asp:RequiredFieldValidator>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 </td>
             </tr>
             <tr>
@@ -115,11 +121,15 @@
                     
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     
-                    <asp:RadioButtonList ID="RadioButtonList1" runat="server" ForeColor="Black" Height="22px" RepeatDirection="Horizontal" Width="433px">
+                    <asp:RadioButtonList ID="RadioButtonList1" runat="server" ForeColor="Black" Height="16px" RepeatDirection="Horizontal" Width="534px">
                         <asp:ListItem>Female</asp:ListItem>
                         <asp:ListItem>Male</asp:ListItem>
                         <asp:ListItem>Others</asp:ListItem>
                     </asp:RadioButtonList>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="RadioButtonList1"  Display = "Dynamic" ErrorMessage="*Gender Required" ForeColor="Red"></asp:RequiredFieldValidator>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
                 </td>
             </tr>
@@ -128,7 +138,11 @@
                     <asp:Label ID="Label9" runat="server" ForeColor="Black" Text="Aadhar Number"></asp:Label>
                 </td>
                 <td class="auto-style27">
-                    <asp:TextBox ID="TextBox7" runat="server" Width="202px"></asp:TextBox>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox ID="TextBox7" runat="server" Width="202px"></asp:TextBox>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server"
+                ControlToValidate="TextBox7"  Display = "Dynamic" ErrorMessage="Should be 12 digits"
+                ValidationExpression="[0-9]{12}" ForeColor="Red"></asp:RegularExpressionValidator> 
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox7"  Display = "Dynamic" ErrorMessage="*Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
@@ -136,7 +150,12 @@
                     <asp:Label ID="Label10" runat="server" ForeColor="Black" Text="Phone"></asp:Label>
                 </td>
                 <td class="auto-style27">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:TextBox ID="TextBox8" runat="server" Width="202px"></asp:TextBox>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server"
+                ControlToValidate="TextBox8"  Display = "Dynamic" ErrorMessage="Should be 10 digits"
+                ValidationExpression="[0-9]{10}" ForeColor="Red"></asp:RegularExpressionValidator>  
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextBox8"  Display = "Dynamic" ErrorMessage="*Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
@@ -144,7 +163,12 @@
                     <asp:Label ID="Label11" runat="server" ForeColor="Black" Text="Email"></asp:Label>
                 </td>
                 <td class="auto-style27">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:TextBox ID="TextBox9" runat="server" Width="202px"></asp:TextBox>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="TextBox9"
+    ForeColor="Red" ValidationExpression="^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
+    Display = "Dynamic" ErrorMessage = "Invalid email address"/>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBox9"  Display = "Dynamic" ErrorMessage="*Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             </table>
@@ -155,11 +179,12 @@
         <br />
         <table class="auto-style4">
             <tr>
-                <td class="auto-style30"><span class="auto-style11"><strong>MEAL PREFERENCE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></span><br class="auto-style29" />
-                    <asp:CheckBoxList ID="CheckBoxList2" runat="server" Height="50px" OnSelectedIndexChanged="CheckBoxList2_SelectedIndexChanged" RepeatDirection="Horizontal" Width="881px">
-                        <asp:ListItem>Veg</asp:ListItem>
+                <td class="auto-style30"><span class="auto-style11"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MEAL PREFERENCE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></span><br class="auto-style29" />
+                    <asp:RadioButtonList ID="RadioButtonList2" runat="server" Height="69px" RepeatDirection="Horizontal" Width="882px">
                         <asp:ListItem>Non Veg</asp:ListItem>
-                    </asp:CheckBoxList>
+                        <asp:ListItem>Veg</asp:ListItem>
+                    </asp:RadioButtonList>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="RadioButtonList2"  Display = "Dynamic" ErrorMessage="*Required" ForeColor="Red"></asp:RequiredFieldValidator>
                     <br class="auto-style29" />
                     <span class="auto-style29">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
                     <br class="auto-style28" />
