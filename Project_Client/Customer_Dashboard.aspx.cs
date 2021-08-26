@@ -30,6 +30,7 @@ namespace Project_Client
             string from = DropDownList1.Text;
             string to = DropDownList2.Text;
             string date = TextBox1.Text;
+            Session["No_of_travallers"] = DropDownList3.Text;
             List<FlightDetails> ls = dl.searchflight(from, to, date);
             if (ls.Count == 0)
             {

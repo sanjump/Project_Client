@@ -35,7 +35,7 @@ namespace Project_Client
                     TextBox7.Text = obj.Duration;
                     TextBox8.Text = (obj.Total_Seats).ToString();
                     TextBox9.Text = obj.Price;
-                    TextBox10.Text = obj.Flight_Id;
+                    TextBox10.Text = obj.Date;
 
 
 

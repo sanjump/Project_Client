@@ -16,8 +16,6 @@ namespace Project_Client
         {
             if (!Page.IsPostBack)
             {
-                dvFirstDiv.Visible = false;
-                TextBox1.Attributes["min"] = DateTime.Now.ToString("yyyy-MM-dd");
             }
 
         }
@@ -25,22 +23,7 @@ namespace Project_Client
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            Label5.Text = "";
-            string from = DropDownList1.Text;
-            string to = DropDownList2.Text;
-            string date = TextBox1.Text;
-            List<FlightDetails> ls = dl.searchflight(from, to, date);
-            if (ls.Count == 0)
-            {
-                Label5.Text = "Flights Not Available";
-            }
-            else
-            {
-                dvFirstDiv.Visible = true;
-                GridView1.DataSource = ls;
-                GridView1.DataBind();
-            }
-
+           
         }
 
         protected void CustomValidator1_ServerValidate(object source, ServerValidateEventArgs args)
@@ -62,18 +45,7 @@ namespace Project_Client
 
         protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
         {
-            if (e.CommandName == "view")
-            {
-
-                int ind = Convert.ToInt32(e.CommandArgument);
-                GridViewRow row = GridView1.Rows[ind];
-                string flightid = row.Cells[0].Text.ToString();
-                string date = row.Cells[8].Text.ToString();
-                FlightDetails obj1 = dl.searchflight1(flightid, date);
-                Session["Flight_details"] = obj1;
-                Response.Redirect("Flight.aspx");
-
-            }
+            
         }
 
         protected void GridView1_RowUpdated(object sender, GridViewUpdatedEventArgs e)
@@ -82,6 +54,17 @@ namespace Project_Client
         }
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+
+        }
+
+        protected void TextBox3_TextChanged(object sender, EventArgs e)
         {
 
         }

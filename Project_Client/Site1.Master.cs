@@ -19,6 +19,9 @@ namespace Project_Client
             Response.Redirect("HomeLogin.aspx");
         }
 
-   
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AboutUs3.aspx");
+        }
     }
 }

@@ -49,7 +49,8 @@
 </head>
      
 <body>
-    <link href='StyleSheet1.css' rel='stylesheet' type='text/css'/>
+    <img class="log"/>
+    <link href='CSS/StyleSheet1.css' rel='stylesheet' type='text/css'/>
    
         <div class="auto-style2">
       

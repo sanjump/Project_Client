@@ -174,6 +174,9 @@ select:focus {
             padding-left: 15px;
             padding-right: 15px;
         }
+        .auto-style3 {
+            margin-left: 0px;
+        }
         </style>
 
 
@@ -194,7 +197,7 @@ select:focus {
     <!--Card-Body-->
     <div class="card-body">
         <!--Card-Title-->
-        <p class="card-title text-center shadow mb-1 rounded">Travel Booking Form</p>
+        <p class="card-title text-center shadow mb-1 rounded">Search Flight</p>
         <div class="icons text-center">
             <i class="fa fa-plane fa-2x" aria-hidden="true"></i>
            <%-- <i class="fa fa-taxi fa-2x" aria-hidden="true"></i>
@@ -206,7 +209,7 @@ select:focus {
             <div class="col-sm-4"> 
                 <asp:Label ID="Label1" runat="server" Font-Bold="True" Text="From"></asp:Label>
                 <asp:DropDownList ID="DropDownList1" runat="server"  class="browser-default custom-select mb-4">
-                    <asp:ListItem>--Select--</asp:ListItem>
+                    <asp:ListItem>--From--</asp:ListItem>
                     <asp:ListItem>Chennai</asp:ListItem>
                     <asp:ListItem>Agra</asp:ListItem>
                     <asp:ListItem>Delhi</asp:ListItem>
@@ -216,7 +219,7 @@ select:focus {
             <div class="auto-style2"> 
 &nbsp;<asp:Label ID="Label2" runat="server" Font-Bold="True" Text="To"></asp:Label>
                 <asp:DropDownList ID="DropDownList2" runat="server" class="browser-default custom-select mb-4">
-                     <asp:ListItem>--Select--</asp:ListItem>
+                     <asp:ListItem>--To--</asp:ListItem>
                     <asp:ListItem>Chandigarh</asp:ListItem>
                     <asp:ListItem>Pune</asp:ListItem>
                     <asp:ListItem>Ahmedabad</asp:ListItem>
@@ -226,9 +229,8 @@ select:focus {
               <div class="auto-style2"> 
 &nbsp;<asp:Label ID="Label4" runat="server" Font-Bold="True" Text="To"></asp:Label>
                 <asp:DropDownList ID="DropDownList3" runat="server" class="browser-default custom-select mb-4">
-                     <asp:ListItem>--Select--</asp:ListItem>
-                    <asp:ListItem>1</asp:ListItem>
-                    <asp:ListItem>1</asp:ListItem>
+                     <asp:ListItem>--No of Travellers--</asp:ListItem>
+                  
                     <asp:ListItem>1</asp:ListItem>
                     <asp:ListItem>2</asp:ListItem>
                     <asp:ListItem>3</asp:ListItem>
@@ -239,7 +241,8 @@ select:focus {
             
                  <div class="auto-style1"> 
 &nbsp;<asp:Label ID="Label3" runat="server" Font-Bold="True" Text="Date"></asp:Label>
-                <asp:TextBox ID="TextBox1" runat="server" TextMode="Date"></asp:TextBox>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox ID="TextBox1" placeholder="Date" runat="server" TextMode="Date"></asp:TextBox>
+                   
                      <asp:CustomValidator ID="CustomValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="*The Flights are available only for next 30 days" OnServerValidate="CustomValidator1_ServerValidate"></asp:CustomValidator>
                </div>
             </div>
@@ -267,7 +270,8 @@ select:focus {
        <div class="row-lg-12">
            <div class="">
            <center>
-           <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" Height="216px" Width="366px" AutoGenerateColumns="False" OnRowCommand="GridView1_RowCommand" OnRowUpdated="GridView1_RowUpdated" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+           <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Height="216px" Width="594px" AutoGenerateColumns="False" OnRowCommand="GridView1_RowCommand" OnRowUpdated="GridView1_RowUpdated" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" CssClass="auto-style3">
+               <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                <Columns>
                    <asp:BoundField DataField="Flight_id" HeaderText="Flight ID" />
                    <asp:BoundField DataField="Flight_name" HeaderText="Flight Name" />
@@ -280,14 +284,16 @@ select:focus {
                    <asp:BoundField DataField="Date" HeaderText="Date" />
                    <asp:ButtonField ButtonType="Button" CommandName="view" ShowHeader="True" Text="View Details" />
                </Columns>
-            <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
-            <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
-            <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
-            <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
-            <SortedAscendingCellStyle BackColor="#F7F7F7" />
-            <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
-            <SortedDescendingCellStyle BackColor="#E5E5E5" />
-            <SortedDescendingHeaderStyle BackColor="#242121" />
+               <EditRowStyle BackColor="#999999" />
+            <FooterStyle BackColor="#5D7B9D" ForeColor="White" Font-Bold="True" />
+            <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+            <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+               <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
+            <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+            <SortedAscendingCellStyle BackColor="#E9E7E2" />
+            <SortedAscendingHeaderStyle BackColor="#506C8C" />
+            <SortedDescendingCellStyle BackColor="#FFFDF8" />
+            <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
         </asp:GridView>   </center></div>
   </div>
 </div>

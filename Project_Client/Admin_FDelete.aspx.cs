@@ -16,23 +16,7 @@ namespace Project_Client
         int flag = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!Page.IsPostBack)
-            {
-                string fid = (string)Session["fid"];
-                flag = dl.deleteflightdetailsbyid(fid);
-                if (flag == 1)
-                {
-                    Label1.Text = "Deletion successfull....";
-                    Response.Redirect("Admin_AllFlights.aspx");
-
-                }
-                else if (flag == 0)
-                {
-                    Label1.Text = "Deletion unsuccessfull....";
-
-                }
-
-            }
+           
         }
     }
 }

@@ -25,10 +25,10 @@
 </head>
 <body>
     
+  <img class="log"/>
     <div class="loginbox">
-    <img src="avatar1.jpeg" class="avatar"/>
-    <link href="StyleSheet1.css" rel='stylesheet'  type ='text/css'/>
-   
+    <img src="Assets/avatar1.jpeg" class="avatar"/>
+    <link href='CSS/StyleSheet1.css' rel='stylesheet' type='text/css'/>
         
         <table class="auto-style1">
             <tr>

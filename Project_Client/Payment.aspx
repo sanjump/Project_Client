@@ -2,161 +2,272 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <!DOCTYPE html>
+   <!DOCTYPE html>
 
 <html>
-<head>
+<head >
     <title></title>
-    <style type="text/css">
-        .auto-style1 {
-            width: 100%;
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+.header img {
+  float: left;
+  width: 50px;
+  height: 50px;
+  background: #555;
+}
+
+.header h1 {
+    color:blue;
+    font-style:italic;
+  position: relative;
+  top: 10px;
+  left: 8px;
+}
+
+
+.row {
+    width:85%;
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+    .bank {
+ color:navy;
+ position:relative;
         }
-        .auto-style2 {
-            height: 218px;
-        }
-        .auto-style3 {
-            height: 216px;
-        }
-        .auto-style4 {
-            height: 218px;
-            font-size: x-large;
-            text-align: center;
-            width: 646px;
-        }
-        .auto-style5 {
-            height: 218px;
-            width: 646px;
-        }
-        .auto-style6 {
-            height: 216px;
-            width: 646px;
-        }
-        .auto-style8 {
-            font-size: large;
-        }
-        .auto-style10 {
-            font-weight: bold;
-            color: #FFFFFF;
-            background-color: #2F7FAD;
-        }
-        .auto-style11 {
-            height: 216px;
-            width: 646px;
-            font-size: x-large;
-            text-align: center;
-        }
-        .auto-style13 {
-            text-align: center;
-        }
-        .auto-style14 {
-            font-size: x-large;
-        }
-        .auto-style15 {
-            font-size: x-large;
-            color: #FFFFFF;
-            background-color: #2F7FAD;
-        }
-        .auto-style16 {
-            margin-left: 0px;
-        }
-    </style>
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.button {
+  background-color: blue;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 25%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+    .auto-style1 {
+        color: #000000;
+    }
+    .auto-style2 {
+        width: 104%;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        margin: 0 -16px;
+    }
+</style>
+    <script src="JavaScript.js" type="text/javascript">
+        </script>
 </head>
 <body>
-    
-        <div class="auto-style13">
-            <div class="auto-style13">
-                <strong><span class="auto-style15">
-                <br />
-                <br />
-                METHOD OF PAYMENT</span></strong><span class="auto-style14">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <br />
-            &nbsp;&nbsp;&nbsp;&nbsp; <strong>
-                <asp:RadioButton ID="RadioButton5" runat="server" CssClass="auto-style8" GroupName="2" Text="UPI" ForeColor="Black" />
-                <span class="auto-style8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
-                <asp:RadioButton ID="RadioButton6" runat="server" CssClass="auto-style8" GroupName="2" Text="CREDIT/DEBIT CARD" ForeColor="Black" />
-                <span class="auto-style8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
-                <asp:RadioButton ID="RadioButton7" runat="server" CssClass="auto-style8" GroupName="2" Text="NET BANKING" ForeColor="Black" />
-                <br />
-                <br />
-                <span class="auto-style5"><span class="auto-style6">
-                <asp:Button ID="Button4" runat="server" CssClass="auto-style10" Text="Proceed to Pay" Width="177px" />
-                </span></span></strong>
-                <br />
-            </div>
-            <table class="auto-style1">
-                <tr>
-                    <td class="auto-style4"><strong><span class="auto-style14">
-                        <asp:Button ID="Button5" runat="server" CssClass="auto-style16" Height="169px" Text="Button" Width="355px" />
-                        <br />
-                        <asp:Button ID="Button6" runat="server" CssClass="auto-style16" Height="169px" Text="Button" Width="355px" />
-                        <br />
-                        <asp:Button ID="Button7" runat="server" CssClass="auto-style16" Height="169px" Text="Button" Width="355px" />
-                    <td class="auto-style4"><strong>UPI</strong></td>
-                    <td class="auto-style2">ENTER UPI ID:&nbsp;
-                        <asp:TextBox ID="TextBox1" runat="server" Width="394px"></asp:TextBox>
-                        <br />
-                        <br />
-&nbsp;<span class="auto-style5"><strong><span class="auto-style8">&nbsp;</span></strong><span class="auto-style6">AMOUNT:<asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-                        <br />
-&nbsp;
-                        <br />
-&nbsp;&nbsp; <strong>
-                        <asp:Button ID="Button1" runat="server" CssClass="auto-style10" Text="Proceed to Pay" Width="177px" />
-                        </strong></span></span></td>
-                </tr>
-                <tr>
-                    <td class="auto-style4"><strong>CREDIT/DEBIT CARD</strong></td>
-                    <td class="auto-style2">CARD NUMBER :<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-                        <br />
-                        <br />
-                        NAME ON CARD:<asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
-                        <br />
-                        <br />
-                        EXPIRY MONTH AND YEAR :<asp:DropDownList ID="DropDownList1" runat="server">
-                        </asp:DropDownList>
-&nbsp;<asp:DropDownList ID="DropDownList2" runat="server">
-                        </asp:DropDownList>
-                        <br />
-                        <br />
-                        CARD CVV:<asp:TextBox ID="TextBox4" runat="server" Width="98px"></asp:TextBox>
-                        <br />
-                        <br />
-                        <span class="auto-style5"><span class="auto-style6">AMOUNT:<asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
-                        <br />
-&nbsp;
-                        <br />
-&nbsp;&nbsp; <strong>
-                        <asp:Button ID="Button2" runat="server" CssClass="auto-style10" Text="Proceed to Pay" Width="177px" />
-                        <br />
-                        </strong></span></span></td>
-                </tr>
-                <tr>
-                    <td class="auto-style11"><strong>NET BANKING</strong></td>
-                    <td class="auto-style3">
-                        <br />
-                        <asp:RadioButton ID="RadioButton1" runat="server" GroupName="1" Text="State Bank of India" />
-                        <br />
-                        <br />
-                        <asp:RadioButton ID="RadioButton2" runat="server" GroupName="1" Text="HDFC Bank" />
-                        <br />
-                        <br />
-                        <asp:RadioButton ID="RadioButton3" runat="server" GroupName="1" Text="ICICI Bank" />
-                        <br />
-                        <br />
-                        <asp:RadioButton ID="RadioButton4" runat="server" GroupName="1" Text="Axis Bank" />
-                        <br />
-                        <br />
-                        <span class="auto-style5"><span class="auto-style6">AMOUNT:<asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
-                        <br />
-&nbsp;
-                        <br />
-&nbsp;&nbsp; <strong>
-                        <asp:Button ID="Button3" runat="server" CssClass="auto-style10" Text="Proceed to Pay" Width="177px" />
-                        </strong></span></span></td>
-                </tr>
-            </table>
-        </div>
    
+       
+    <br />
+   
+       
+<div class="auto-style2">
+  <div class="col-75">
+    <div class="container">
+       <h1> Payment Page</h1>
+
+                            <span class="auto-style1">
+
+                            <label>Choose Payment Method</label></span> <br/>
+                            <select id="pay_method" onchange="displayPayment()">
+                                <option value="NA" selected="">Choose</option>
+                                <option value="C">Credit/Debit Card</option>
+                                <option value="B">UPI</option>
+                                <option value="A">BankTransfer</option>
+                            </select>
+<br/> <br/><br/><br/>
+      <div id="card-payment"  class="auto-style1" style="display:none">     
+        <div class="row">
+          <div class="col-50">
+           
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Enter Your Full Name">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="Enter Your Email">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="Enter Your Address">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Enter Your City">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="Enter Your State">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="Enter Your Pincode">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Enter Your name">
+            <label for="ccnum">Card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="Enter Card Number">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="Enter Expiry Month">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="Enter Expiry Year">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="Enter Your CVV">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+          <asp:Button ID="Button1" runat="server" class="btn" Text="Pay Now" OnClick="Button1_Click" />
+    
+    </div>
+
+      <div id="bank-payment"  class="auto-style1" style="display:none">
+          <div class="header">
+ 
+  <h1>UPI</h1>
+        </div>
+       <asp:TextBox ID="TextBox1" placeholder="Enter UPI ID" runat="server"></asp:TextBox>
+          <asp:Button ID="Button2"  class="button" runat="server" OnClick="Button1_Click" Text="Pay Now" />
+       </div>  
+        <div id="net-payment" class="auto-style1" style="display:none">
+          <h1 class="bank"><i class="fa fa-university" style="color:navy";></i>Bank Transfer</h1>
+            <asp:TextBox ID="TextBox6" placeholder="Account Holder's Name" runat="server"></asp:TextBox>
+       <asp:TextBox ID="TextBox3" placeholder="Enter Bank Account Number" runat="server"></asp:TextBox>
+              <asp:TextBox ID="TextBox4" placeholder="IFSC Code" runat="server"></asp:TextBox>
+              <asp:TextBox ID="TextBox5" placeholder="Mobile Number" runat="server"></asp:TextBox>
+          <asp:Button ID="Button3"  class="button" runat="server" OnClick="Button1_Click" Text="Pay Now" />
+
+       </div>  
+  </div>
+      
+
+  </div>
+   
+    </div>
+
+           
+  
 </body>
 </html>
+
 </asp:Content>

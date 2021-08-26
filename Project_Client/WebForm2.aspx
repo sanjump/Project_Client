@@ -1,267 +1,94 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site2.Master" AutoEventWireup="true" CodeBehind="WebForm2.aspx.cs" Inherits="Project_Client.WebForm2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    
+    <style type="text/css">
+        .auto-style1 {
+            color: #000000;
+        }
+    </style>
+    
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
    
-    <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
 <head>
     <title></title>
-
-   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
-   
-    <%--<%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>--%>
-    
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-<!--Card-->
-    
-    
-    <style>
-    .card {
-    margin: auto;
-    border: solid 1px #dbdad7;
-    width: 99%;
-    padding-left: 10px !important;
-    padding-bottom: 10px !important;
-    padding-right: 10px !important;
-    padding-top: 0px !important
-}
-
-.card-title {
-    margin: auto;
-    padding: 15px;
-    background-color: #2f7fad;
-    color: white;
-    width: 80%
-}
-
-div.card-body {
-    padding: 0px
-}
-
-.custom-select {
-    width: 100%
-}
-
-.col-sm-4 {
-    margin: 15px 0 0 0;
-    display: inline-block;
-    float: left;
-    width: 30%
-}
-.col-sm-4 {
-    margin: 15px 0 0 0;
-    display: inline-block;
-    float: left;
-    width: 30%
-}
-.btn2 {
-    margin-left: 10%
-}
-
-input {
-    outline: 0 !important;
-    border-width: 0 0 2px !important;
-    border-color: #d1d1cf !important
-}
-
-input:focus {
-    border-color: #d1d1cf !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important
-}
-
-select {
-    outline: 0 !important;
-    border-width: 0 0 2px !important;
-    border-color: #d1d1cf !important
-}
-
-select:focus {
-    border-color: #d1d1cf !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important
-}
-
-.radiobtn {
-    margin-left: 3.5%
-}
-
-.icons {
-    margin: auto !important
-}
-
-.fa {
-    border-radius: 25px;
-    width: 10%;
-    margin-left: 5%;
-    border: solid 2px #dbdad7;
-    margin-top: 5%;
-    text-align: center
-}
-
-.fa-plane {
-    color: #1cad9f
-}
-
-.fa-taxi {
-    color: #c2f700
-}
-
-.fa-train {
-    color: red
-}
-
-@media only screen and (max-width: 600px) {
-    .card {
-        margin: auto;
-        border: solid 1px #dbdad7;
-        width: 90%;
-        padding-left: 10px !important;
-        padding-bottom: 10px !important;
-        padding-right: 10px !important;
-        padding-top: 0px !important
-    }
-
-    .fa {
-        border-radius: 25px;
-        width: 15%;
-        margin-left: 5%;
-        border: solid 2px #dbdad7;
-        margin-top: 5%;
-        text-align: center
-    }
-}
-        .auto-style1 {
-            position: relative;
-            width: 80%;
-            min-height: 1px;
-            -webkit-box-flex: 0;
-            -ms-flex: 0 0 33.333333%;
-            flex: 0 0 33.333333%;
-            max-width: 83.333333%;
-            display: inline-block;
-            float: left;
-            left: 2px;
-            top: 0px;
-            margin-left: 0;
-            margin-right: 0;
-            margin-top: 15px;
-            margin-bottom: 0;
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-        </style>
-
-
-    <script type="text/javascript">
-    function ToggleDiv(Flag) {
-        if (Flag == "second") {
-            document.getElementById('dvFirstDiv').style.display = 'block';   //javascript to display div
-        }
-        
-    }
-    </script>
-
+     <link href='CSS/StyleSheet5.css' rel='stylesheet' type='text/css'/>
 </head>
 <body>
- 
-       
-<div class="card shadow-lg-5 mb-5 bg-white rounded">
-    <!--Card-Body-->
-    <div class="card-body">
-        <!--Card-Title-->
-        <p class="card-title text-center shadow mb-1 rounded">Travel Booking Form</p>
-        <div class="icons text-center">
-            <i class="fa fa-plane fa-2x" aria-hidden="true"></i>
-           <%-- <i class="fa fa-taxi fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-train fa-2x" aria-hidden="true"></i> </div>--%>
-        <hr/>
-        <p class="searchText"><strong>Search For Cheap Flights</strong></p>
    
-          <div class="row mt-12">
-            <div class="col-sm-4"> 
-                <asp:Label ID="Label1" runat="server" Font-Bold="True" Text="From"></asp:Label>
-                <asp:DropDownList ID="DropDownList1" runat="server"  class="browser-default custom-select mb-4">
-                    <asp:ListItem>Chennai</asp:ListItem>
-                    <asp:ListItem>Agra</asp:ListItem>
-                    <asp:ListItem>Delhi</asp:ListItem>
-                     <asp:ListItem>Trivandrum</asp:ListItem>
-                </asp:DropDownList>
-            </div>
-            <div class="col-sm-4"> 
-&nbsp;<asp:Label ID="Label2" runat="server" Font-Bold="True" Text="To"></asp:Label>
-                <asp:DropDownList ID="DropDownList2" runat="server" class="browser-default custom-select mb-4">
-                    <asp:ListItem>Chandigarh</asp:ListItem>
-                    <asp:ListItem>Pune</asp:ListItem>
-                    <asp:ListItem>Ahmedabad</asp:ListItem>
-                      <asp:ListItem>Delhi</asp:ListItem>
-                </asp:DropDownList>
-                 </div> 
-            
-                 <div class="auto-style1"> 
-&nbsp;<asp:Label ID="Label3" runat="server" Font-Bold="True" Text="Date"></asp:Label>
-                <asp:TextBox ID="TextBox1" runat="server" TextMode="Date"></asp:TextBox>
-                     <asp:CustomValidator ID="CustomValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="*The Flights are available only for next 30 days" OnServerValidate="CustomValidator1_ServerValidate"></asp:CustomValidator>
-               </div>
-            </div>
-           
+        <div class="form-style-5">
 
-          
-           
-           <%--  <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click1">LinkButton</asp:LinkButton>--%>
+<fieldset>
+<legend>
+    <br />
+    <span class="number">1</span> <span class="auto-style1">Passenger Details</span></legend>
+<asp:TextBox ID="TextBox1"  placeholder="Your Name *" runat="server" Width="460px"></asp:TextBox>
+    <br />
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox1"  Display = "Dynamic" ErrorMessage="* Name Required" ForeColor="Red"></asp:RequiredFieldValidator>
+    <br />
+    &nbsp;&nbsp;&nbsp;
+    <br />
+&nbsp;<asp:TextBox ID="TextBox2"  placeholder="Your Age *" runat="server" Width="458px"></asp:TextBox>
+    <br />
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox2"  Display = "Dynamic" ErrorMessage="* Age Required" ForeColor="Red"></asp:RequiredFieldValidator>
+    <label for="job"><span class="auto-style1">
+    <br />
+    Gender</span>:</label>
+     <asp:RadioButtonList ID="RadioButtonList1" runat="server" ForeColor="Black" Height="16px" RepeatDirection="Horizontal" Width="534px">
+                        <asp:ListItem>Female</asp:ListItem>
+                        <asp:ListItem>Male</asp:ListItem>
+                        <asp:ListItem>Others</asp:ListItem>
+                    </asp:RadioButtonList>
+     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="RadioButtonList1"  Display = "Dynamic" ErrorMessage="*Gender Required" ForeColor="Red"></asp:RequiredFieldValidator>
+    <br />
+    <br />
+    <asp:TextBox ID="TextBox4"  placeholder="Your Aadhar No *" runat="server" Width="464px"></asp:TextBox>
+     <br />
+     <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server"
+                ControlToValidate="TextBox4"  Display = "Dynamic" ErrorMessage="*Should be 12 digits"
+                ValidationExpression="[0-9]{12}" ForeColor="Red"></asp:RegularExpressionValidator> 
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox4"  Display = "Dynamic" ErrorMessage="*Required" ForeColor="Red"></asp:RequiredFieldValidator>
+    <br />
+    <br />
+<asp:TextBox ID="TextBox3"  placeholder="Your Email *" runat="server" OnTextChanged="TextBox3_TextChanged" Width="461px"></asp:TextBox>
+     <br />
+     <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server"
+                ControlToValidate="TextBox3"  Display = "Dynamic" ErrorMessage="*Should be 10 digits"
+                ValidationExpression="[0-9]{10}" ForeColor="Red"></asp:RegularExpressionValidator> 
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextBox3"  Display = "Dynamic" ErrorMessage="*Required" ForeColor="Red"></asp:RequiredFieldValidator>
+    <br />
+    <br />
+    <asp:TextBox ID="TextBox5"  placeholder="Your Contact No *" runat="server" Width="462px"></asp:TextBox>
+     <br />
+     <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="TextBox5"
+    ForeColor="Red" ValidationExpression="^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
+    Display = "Dynamic" ErrorMessage = "*Invalid email address"/>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBox5"  Display = "Dynamic" ErrorMessage="*Required" ForeColor="Red"></asp:RequiredFieldValidator>
 
-           <%-- <telerik:RadButton RenderMode="Lightweight" ID="RadButton1" runat="server" Text="Submit"    OnClientClicking="Clicking" OnClick="RadButton1_Click">
-</telerik:RadButton>--%>
-              <asp:Button ID="Button2" runat="server" Text="Search"  OnClick="Button2_Click"/>
-           <%--OnClientClick="ToggleDiv('second');return false;"--%>
-        <%--<asp:Button ID="Button1" runat="server" Text="Search"  OnClick="Button1_Click1" /> --%>
-       
-            <asp:Label ID="Label5" runat="server"></asp:Label>
-       
-    </div>
-</div>
-</div>
-        <div class="card"  runat="server" id="dvFirstDiv" >
-  <div class="card-body">
-     
-    <h2><strong><Center>Flight Details</Center></strong></h2>
-       <div class="row-lg-12">
-           <div class="">
-           <center>
-           <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" Height="216px" Width="366px" AutoGenerateColumns="False" OnRowCommand="GridView1_RowCommand" OnRowUpdated="GridView1_RowUpdated" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
-               <Columns>
-                   <asp:BoundField DataField="Flight_id" HeaderText="Flight ID" />
-                   <asp:BoundField DataField="Flight_name" HeaderText="Flight Name" />
-                   <asp:BoundField DataField="Departure" HeaderText="Departure" />
-                   <asp:BoundField DataField="Destination" HeaderText="Destination" />
-                   <asp:BoundField DataField="Departure_time" HeaderText="Departure Time" />
-                   <asp:BoundField DataField="Duration" HeaderText="Duration" />
-                   <asp:BoundField DataField="Arrival_time" HeaderText="Arrival Time" />
-                   <asp:BoundField DataField="Price" HeaderText="Price" />
-                   <asp:BoundField DataField="Date" HeaderText="Date" />
-                   <asp:ButtonField ButtonType="Button" CommandName="view" ShowHeader="True" Text="View Details" />
-               </Columns>
-            <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
-            <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
-            <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
-            <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
-            <SortedAscendingCellStyle BackColor="#F7F7F7" />
-            <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
-            <SortedDescendingCellStyle BackColor="#E5E5E5" />
-            <SortedDescendingHeaderStyle BackColor="#242121" />
-        </asp:GridView>   </center></div>
-  </div>
-</div>
-</div>
+   
+</fieldset>
+<fieldset>
+<legend>
+    <br />
+    <span class="number">2</span> <span class="auto-style1">Meal Preference<br />
+    </span></legend>
+
+    <asp:RadioButtonList ID="RadioButtonList2" runat="server" ForeColor="Black" Height="35px" RepeatDirection="Horizontal" Width="527px">
+                        <asp:ListItem>Non Veg</asp:ListItem>
+                        <asp:ListItem>Veg</asp:ListItem>
+                    </asp:RadioButtonList>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="RadioButtonList2"  Display = "Dynamic" ErrorMessage="*Required" ForeColor="Red"></asp:RequiredFieldValidator>
  
-  
-    <p>
-        &nbsp;</p>
+    <br />
+ 
+</fieldset>
+            <asp:Button ID="Button1" runat="server" Text="Continue to seat selection" />
+
+</div>
+    
 </body>
 </html>
 

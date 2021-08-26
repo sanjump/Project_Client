@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site3.Master" AutoEventWireup="true" CodeBehind="Admin_ForgotPassword.aspx.cs" Inherits="Project_Client.Admin_ForgotPassword" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Admin_ForgotPassword.aspx.cs" Inherits="Project_Client.Admin_ForgotPassword" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -49,7 +49,8 @@
 </head>
      
 <body> 
-    <link href='StyleSheet1.css' rel='stylesheet' type='text/css'/>
+    <img class="log"/>
+    <link href='CSS/StyleSheet1.css' rel='stylesheet' type='text/css'/>
    
         <div class="auto-style2">
       

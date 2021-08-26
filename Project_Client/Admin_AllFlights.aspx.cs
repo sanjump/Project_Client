@@ -18,6 +18,7 @@ namespace Project_Client
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            Label1.Visible = false;
             if (!Page.IsPostBack)
             {
                 ls = (List<FlightDetails>)dl.getflightdetails();
@@ -49,14 +50,24 @@ namespace Project_Client
             {
 
 
-
+                int flag = 0;
                 int ind = Convert.ToInt32(e.CommandArgument);
                 GridViewRow row = GridView1.Rows[ind];
-
                 string fid = row.Cells[0].Text.ToString();
-                Session["fid"] = fid;
-                Response.Redirect("Admin_FDelete.aspx");
+                string date = row.Cells[1].Text.ToString();
+                flag = dl.deleteflightdetailsbyid(fid,date);
+                if (flag == 1)
+                {
+                    
+                    Response.Redirect("Admin_AllFlights.aspx");
 
+                }
+                else
+                {
+                    Label1.Visible = true;
+                    Label1.Text = "Deletion Not Successfull";
+                }
+                
 
             }
             else if (e.CommandName == "edit1")

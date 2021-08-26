@@ -38,18 +38,7 @@ namespace Project_Client
             obj.phone = TextBox5.Text;
             obj.sec_ques = DropDownList1.Text;
             obj.sec_ans = TextBox6.Text;
-            if (RadioButton1.Checked == true)
-            {
-                obj.gender = "Female";
-            }
-            else if (RadioButton2.Checked == true)
-            {
-                obj.gender = "Male";
-            }
-            else
-            {
-                obj.gender = "Others";
-            }
+            obj.gender = RadioButtonList1.SelectedValue;
             string flag = dl.Register(obj);
             if (flag == "true")
             {
@@ -65,6 +54,11 @@ namespace Project_Client
         }
 
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void RadioButtonList1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

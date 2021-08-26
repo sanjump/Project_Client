@@ -28,11 +28,11 @@
         .auto-style9 {
             font-size: medium;
         }
-        .auto-style30 {
-            text-align: center;
-            height: 92px;
-            background-color: #2F7FAD;
+        body {
+            background-image: url(Assets/Flight.jpg);
         }
+    </style>
+
         </style>
 </head>
     <body>
@@ -50,7 +50,7 @@
         
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     
-        <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" Height="275px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Width="1337px" AutoGenerateColumns="False" OnRowCommand="GridView1_RowCommand">
+        <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" Height="275px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Width="1282px" AutoGenerateColumns="False" OnRowCommand="GridView1_RowCommand">
             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
             <Columns>
                 <asp:BoundField HeaderText="Flight Id" DataField="Flight_id" />
@@ -72,6 +72,8 @@
         </asp:GridView>
         &nbsp;&nbsp;&nbsp;
         <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         <br />
         <br />
         <table class="auto-style4">

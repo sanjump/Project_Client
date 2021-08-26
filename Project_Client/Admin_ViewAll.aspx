@@ -76,63 +76,63 @@
         <br />
         <table class="auto-style18">
             <tr>
-                <td class="auto-style19"><strong>FLIGHT_ID</strong></td>
+                <td class="auto-style19"><strong>FLIGHT ID</strong></td>
                 <td class="auto-style17">
-                    <asp:TextBox ID="TextBox1" runat="server" Width="320px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" Width="320px" Enabled="False"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style19"><strong>FLIGHT_NAME</strong></td>
+                <td class="auto-style19"><strong>FLIGHT NAME</strong></td>
                 <td class="auto-style17">
-                    <asp:TextBox ID="TextBox2" runat="server" Width="320px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox2" runat="server" Width="320px" Enabled="False"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style19"><strong>DEPARTURE</strong></td>
                 <td class="auto-style17">
-                    <asp:TextBox ID="TextBox3" runat="server" Width="320px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox3" runat="server" Width="320px" Enabled="False"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style19"><strong>DESTINATION</strong></td>
                 <td class="auto-style17">
-                    <asp:TextBox ID="TextBox4" runat="server" Width="320px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox4" runat="server" Width="320px" Enabled="False"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style19"><strong>DEPARTURE_TIME</strong></td>
+                <td class="auto-style19"><strong>DEPARTURE TIME</strong></td>
                 <td class="auto-style17">
-                    <asp:TextBox ID="TextBox5" runat="server" TextMode="Time" Width="320px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox5" runat="server" TextMode="Time" Width="320px" Enabled="False"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style19"><strong>ARRIVAL_TIME</strong></td>
+                <td class="auto-style19"><strong>ARRIVAL TIME</strong></td>
                 <td class="auto-style17">
-                    <asp:TextBox ID="TextBox6" runat="server" TextMode="Time" Width="320px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox6" runat="server" TextMode="Time" Width="320px" Enabled="False"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style20"><strong>DURATION</strong></td>
                 <td class="auto-style21">
-                    <asp:TextBox ID="TextBox7" runat="server" Width="320px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox7" runat="server" Width="320px" Enabled="False"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style19"><strong>TOTAL SEATS</strong></td>
                 <td class="auto-style17">
-                    <asp:TextBox ID="TextBox8" runat="server" Width="320px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox8" runat="server" Width="320px" Enabled="False"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style19"><strong>PRICE</strong></td>
                 <td class="auto-style17">
-                    <asp:TextBox ID="TextBox9" runat="server" Width="320px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox9" runat="server" Width="320px" Enabled="False"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style19"><strong>DATE</strong></td>
                 <td class="auto-style17">
-                    <asp:TextBox ID="TextBox10" runat="server" TextMode="Date" Width="320px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox10" runat="server" Width="320px" Enabled="False"></asp:TextBox>
                 </td>
             </tr>
             </table>
@@ -143,8 +143,7 @@
             </span></span></strong>
         </p>
         <p>
-            <asp:LinkButton ID="LinkButton1" runat="server" ForeColor="#0099CC" OnClick="LinkButton1_Click" >All flight details</asp:LinkButton>
-        </p>
+            &nbsp;</p>
    
 </body>
 </html>

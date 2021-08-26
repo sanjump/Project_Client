@@ -21,7 +21,7 @@ namespace Project_Client
 
                 FlightDetails obj1 = dl.GetFlightById(obj.Flight_Id, obj.Date);
                 string status = "";
-                if (obj.Total_Seats > 0)
+                if (obj.Total_Seats >= Convert.ToInt32(Session["No_of_travallers"]))
                 {
                     Label5.Text = "Seats Available - " + obj.Total_Seats;
                     status = "Confirmed";
@@ -29,19 +29,19 @@ namespace Project_Client
 
                 else
                 {
-                    int waiting = (obj.Total_Seats * -1) + 1;
+                    int waiting = (obj.Total_Seats -Convert.ToInt32(Session["No_of_travallers"])) *-1;
                     Label5.Text = "Waiting list - " + waiting;
                     status = waiting.ToString();
                 }
 
                 Session["status"] = status;
-                Label1.Text = obj.Flight_Name;
-                Label2.Text = obj.Departure;
-                Label3.Text = obj.Duration;
-                Label4.Text = obj.Destination;
-                TextBox1.Text = "1";
+                Label1.Text = "Flight  - " + obj.Flight_Name;
+                Label2.Text = "From - " + obj.Departure + " : " + obj.Departure_time;
+                Label3.Text = "Duration - " + obj.Duration;
+                Label4.Text = "To - " + obj.Destination + " : " + obj.Arrival_time;
+                TextBox1.Text = Session["No_of_travallers"].ToString();
                 TextBox2.Text = obj.Price;
-                TextBox3.Text = obj.Price;
+                TextBox3.Text = (Convert.ToInt32(Session["No_of_travallers"])* Convert.ToInt32(obj.Price)).ToString();
 
 
             }

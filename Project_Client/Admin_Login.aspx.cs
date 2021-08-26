@@ -16,7 +16,7 @@ namespace Project_Client
         Admin_DAL dl = new Admin_DAL();
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            Label1.Visible = false;
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -26,6 +26,7 @@ namespace Project_Client
             int result = dl.loginAdmin(username, password);
             if (result == 0)
             {
+                Label1.Visible = true;
                 Label1.Text = "Invalid Username/Password";
             }
             else if (result == 1)

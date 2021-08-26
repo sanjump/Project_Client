@@ -15,7 +15,7 @@ namespace Project_Client
         Admin_DAL dl = new Admin_DAL();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Label1.Visible = false;
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -30,7 +30,9 @@ namespace Project_Client
                 GridView1.DataBind();
             }
             else
+
             {
+                Label1.Visible = true;
                 Label1.Text = "Error";
             }
         }

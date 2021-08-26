@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site3.Master" AutoEventWireup="true" CodeBehind="Admin_Login.aspx.cs" Inherits="Project_Client.Admin_Login1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Admin_Login.aspx.cs" Inherits="Project_Client.Admin_Login1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -19,8 +19,8 @@
 <body>
      <img class="log"/>
     <div class="loginbox">
-    <img src="avatar1.jpeg" class="avatar"/>
-    <link href='StyleSheet1.css' rel='stylesheet' type='text/css'/>
+    <img src="Assets/avatar1.jpeg" class="avatar"/>
+    <link href='CSS/StyleSheet1.css' rel='stylesheet' type='text/css'/>
   
         <table class="auto-style1">
             <tr>

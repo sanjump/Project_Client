@@ -24,6 +24,7 @@ namespace Project_Client.Model
         public string Amount { get; set; }
         public string Status { get; set; }
         public int WaitingList { get; set; }
+        public int No_of_Travellers { get; set; }
 
     }
 }

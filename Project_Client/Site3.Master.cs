@@ -30,7 +30,7 @@ namespace Project_Client
 
         protected void Button4_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Home_Login.aspx");
+            Response.Redirect("HomeLogin.aspx");
         }
     }
 }

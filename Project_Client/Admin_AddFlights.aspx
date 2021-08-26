@@ -11,16 +11,6 @@
         .auto-style17 {
             background-color: #2F7FAD;
         }
-        .auto-style18 {
-            width: 100%;
-        }
-        .auto-style19 {
-            width: 382px;
-            color: #FFFFFF;
-            font-size: x-large;
-            text-align: left;
-            background-color: #2F7FAD;
-        }
         .auto-style5 {
             height: 218px;
             width: 646px;
@@ -28,11 +18,6 @@
         .auto-style6 {
             height: 216px;
             width: 646px;
-        }
-        .auto-style10 {
-            font-weight: bold;
-            color: #FFFFFF;
-            background-color: #2F7FAD;
         }
         .auto-style22 {
             font-size: xx-large;
@@ -45,29 +30,50 @@
             background-color: #FFFFFF;
             color: #FFFFFF;
         }
-        .auto-style8 {
-            font-size: large;
-        }
         .auto-style25 {
             height: 216px;
             width: 646px;
             background-color: #2F7FAD;
         }
-        .auto-style26 {
-            width: 382px;
-            color: #FFFFFF;
-            font-size: x-large;
-            text-align: left;
-            background-color: #2F7FAD;
-            height: 30px;
-        }
-        .auto-style27 {
-            background-color: #2F7FAD;
-            height: 30px;
-        }
         .auto-style28 {
             color: #FFFFFF;
         }
+    .newStyle2 {
+        background-color: #BBCCDF;
+    }
+    .newStyle3 {
+        background-color: #CCCCFF;
+    }
+    .newStyle4 {
+        background-color: #CCFF99;
+    }
+    .auto-style29 {
+        background-color: #CCFF99;
+        width: 1065px;
+    }
+    .auto-style30 {
+        background-color: #CCCCFF;
+        width: 1019px;
+    }
+    .auto-style31 {
+        background-color: #CCCCFF;
+        width: 1019px;
+        height: 39px;
+    }
+    .auto-style32 {
+        background-color: #CCFF99;
+        width: 1065px;
+        height: 39px;
+    }
+    .newStyle5 {
+        background-color: #BBCDDF;
+    }
+    .newStyle6 {
+            background-color: #FFFFFF;
+        }
+    body{
+        background-image:url(Assets/Flight.jpg);
+    }
     </style>
 </head>
 <body>
@@ -90,75 +96,73 @@
         <br />
         <br />
         <br />
-        <span class="auto-style22"><strong><span class="auto-style23">&nbsp;&nbsp; <span class="auto-style5"><span class="auto-style8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span><span class="auto-style5"><span class="auto-style8"><span class="auto-style24">&nbsp;&nbsp; </span> </span><span class="auto-style24"><span class="auto-style17">NEW FLIGHT DETAILS</span><span class="auto-style25">&nbsp;</span></span></span><span class="auto-style23"><span class="auto-style24">&nbsp; </span> </span><span class="auto-style24">&nbsp; </span>
+        <span class="auto-style22"><strong><span class="auto-style23">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="auto-style5"><span class="auto-style24"><span class="auto-style17">NEW FLIGHT DETAILS</span><span class="auto-style25">&nbsp;</span></span></span><span class="auto-style23"><span class="auto-style24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> </span><span class="auto-style24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; </span>
         <br class="auto-style28" />
         </strong></span>
         <br />
-        <table class="auto-style18">
+        <table class="newStyle2">
             <tr>
-                <td class="auto-style19"><strong>FLIGHT_ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></td>
-                <td class="auto-style17">
+                <td class="auto-style30"><strong>FLIGHT ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></td>
+                <td class="auto-style29">
                     <asp:TextBox ID="TextBox10" runat="server" Width="190px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox10"  Display = "Dynamic" ErrorMessage="*Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style19"><strong>FLIGHT_NAME</strong></td>
-                <td class="auto-style17">
+                <td class="auto-style30"><strong>FLIGHT NAME</strong></td>
+                <td class="auto-style29">
                     <asp:TextBox ID="TextBox11" runat="server" Width="190px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox11"  Display = "Dynamic" ErrorMessage="*Required" ForeColor="Red"></asp:RequiredFieldValidator>
 
                 </td>
             </tr>
             <tr>
-                <td class="auto-style19"><strong>DEPARTURE</strong></td>
-                <td class="auto-style17">
-                    <asp:TextBox ID="TextBox12" runat="server" Width="192px"></asp:TextBox>
+                <td class="auto-style31"><strong>DEPARTURE</strong></td>
+                <td class="auto-style32">
+                    <asp:TextBox ID="TextBox12" runat="server" Width="190px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox12"  Display = "Dynamic" ErrorMessage="*Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 &nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style19"><strong>DESTINATION</strong></td>
-                <td class="auto-style17">
-                    <asp:TextBox ID="TextBox13" runat="server" Width="195px"></asp:TextBox>
+                <td class="auto-style30"><strong>DESTINATION</strong></td>
+                <td class="auto-style29">
+                    <asp:TextBox ID="TextBox13" runat="server" Width="190px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox13"  Display = "Dynamic" ErrorMessage="*Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style26"><strong>DEPARTURE_TIME</strong></td>
-                <td class="auto-style27">
-                    <asp:TextBox ID="TextBox14" runat="server" TextMode="Time" Width="196px"></asp:TextBox>
+                <td class="auto-style30"><strong>DEPARTURE TIME</strong></td>
+                <td class="auto-style29">
+                    <asp:TextBox ID="TextBox14" runat="server" TextMode="Time" Width="190px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextBox14"  Display = "Dynamic" ErrorMessage="*Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
-            <td class="auto-style26"><strong>ARRIVAL_TIME</strong></td>
-                <td class="auto-style17">
-                    <asp:TextBox ID="TextBox15" runat="server" TextMode="Time" Width="198px"></asp:TextBox>
+            <td class="auto-style30"><strong>ARRIVAL TIME</strong></td>
+                <td class="auto-style29">
+                    <asp:TextBox ID="TextBox15" runat="server" TextMode="Time" Width="190px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBox15"  Display = "Dynamic" ErrorMessage="*Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 &nbsp;<asp:CustomValidator ID="CustomValidator1" runat="server" ControlToValidate="TextBox15" ErrorMessage="Arrival time must be greater" Display="Dynamic" ClientValidationFunction="DateTimeValidation" ForeColor="Red"></asp:CustomValidator>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style19"><strong>TOTAL SEATS</strong></td>
-                <td class="auto-style17">
-                    <asp:TextBox ID="TextBox17" runat="server" Width="199px"></asp:TextBox>
-                    <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="TextBox17" ErrorMessage="Min 1" ForeColor="Red" MinimumValue="1"></asp:RangeValidator>
+                <td class="auto-style30"><strong>TOTAL SEATS</strong></td>
+                <td class="auto-style29">
+                    <asp:TextBox ID="TextBox17" runat="server" Width="190px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="TextBox17"  Display = "Dynamic" ErrorMessage="*Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style19"><strong>PRICE</strong></td>
-                <td class="auto-style17">
-                    <asp:TextBox ID="TextBox18" runat="server" Width="198px"></asp:TextBox>
-                    <asp:RangeValidator ID="RangeValidator2" runat="server" ControlToValidate="TextBox18" ErrorMessage="Min Re.1" ForeColor="Red"></asp:RangeValidator>
+                <td class="auto-style30"><strong>PRICE</strong></td>
+                <td class="auto-style29">
+                    <asp:TextBox ID="TextBox18" runat="server" Width="190px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="TextBox18"  Display = "Dynamic" ErrorMessage="*Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style19"><strong>DATE</strong></td>
-                <td class="auto-style17">
-                    <asp:TextBox ID="TextBox19" runat="server" TextMode="Date" Width="200px"></asp:TextBox>
+                <td class="auto-style30"><strong>DATE</strong></td>
+                <td class="auto-style29">
+                    <asp:TextBox ID="TextBox19" runat="server" TextMode="Date" Width="190px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="TextBox19"  Display = "Dynamic" ErrorMessage="*Required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
@@ -168,9 +172,9 @@
         <p>
             &nbsp;</p>
         <p>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong> <span class="auto-style5"><span class="auto-style6">
-            <asp:Button ID="Button4" runat="server" CssClass="auto-style10" Text="Add Details" Width="177px" OnClick="Button4_Click" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><span class="auto-style5"><span class="auto-style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button ID="Button4" runat="server" CssClass="newStyle5" Text="Add Details" Width="177px" OnClick="Button4_Click" ForeColor="Black" />
             </span></span></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </p>
         <p>
             <asp:Label ID="Label1" runat="server"></asp:Label>

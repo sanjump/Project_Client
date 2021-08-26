@@ -8,6 +8,7 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+     <link href="CSS/StyleSheet1.css" rel='stylesheet' type='text/css'/>
     <style type="text/css">
         .auto-styleA {
             width: 1566px;
@@ -33,23 +34,47 @@
             background: #000;
             color: #fff;
         }
+        .auto-styleF {
+            width: 100%;
+            height: 194px;
+            background: #000;
+            color: #fff;
+        }
+        .auto-styleK1 {
+            background-color: #000000;
+        }
+        .auto-styleK2 {
+            font-weight: bold;
+            font-size: medium;
+            background-color: #BBCADF;
+        }
+        .auto-styleK4 {
+            color: #FF0000;
+            background-color: #000000;
+        }
+        .auto-styleK6 {
+            color: #FF0000;
+            background-color: #000000;
+            height: 1px;
+        }
     </style>
 </head>
-    <form id="form1" runat="server">
-    <div class="auto-styleE">
+    <body class="master">    
+        <form id="form1" runat="server">
+    <div class="auto-styleF">
          
-         <h1 class="auto-styleB">&nbsp;&nbsp;</h1>
-         <h1 class="auto-styleB">
-             &nbsp;&nbsp;&nbsp;&nbsp;<asp:Image ID="Image1" runat="server" Height="77px" ImageUrl="~/company_logo.jpeg" Width="164px" />
-             &nbsp; <span class="auto-styleD">CloudWay </span>&nbsp;&nbsp; <strong>
-             <asp:Button ID="Button1" runat="server" CssClass="auto-styleC" Height="39px" Text="My Bookings" Width="106px" />
-             </strong>&nbsp;&nbsp;<strong><asp:Button ID="Button2" runat="server" CssClass="auto-styleC" Height="39px" Text="Flight Search" Width="106px" OnClick="Button2_Click" />
-             &nbsp;&nbsp;<asp:Button ID="Button3" runat="server" CssClass="auto-styleC" Height="39px" Text="About Us" Width="103px" />
+         <h1 class="auto-styleK6">
+             <span class="auto-styleK1">&nbsp;&nbsp;&nbsp;</span></h1>
+         <h1 class="auto-styleK4">
+             <span class="auto-styleK1">&nbsp;<asp:Image ID="Image1" runat="server" Height="102px" ImageUrl="Assets/logo.jpeg" Width="136px" CssClass="auto-style1" />
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> <strong>
+             <asp:Button ID="Button1" runat="server" CssClass="auto-styleK2" Height="39px" Text="My Bookings" Width="134px" OnClick="Button1_Click1" />
+             &nbsp; <asp:Button ID="Button2" runat="server" CssClass="auto-styleK2" Height="39px" Text="Flight Search" Width="136px" OnClick="Button2_Click" />
+             &nbsp; <asp:Button ID="Button3" runat="server" CssClass="auto-styleK2" Height="39px" Text="About Us" Width="103px" OnClick="Button3_Click" />
              &nbsp;
-             <asp:Button ID="Button4" runat="server" CssClass="auto-styleC" Height="39px" Text="Logout" Width="103px" OnClick="Button4_Click" />
-             </strong>&nbsp;&nbsp; &nbsp;</h1>
-         <p class="auto-styleB">
-             &nbsp;</p>
+             <asp:Button ID="Button4" runat="server" CssClass="auto-styleK2" Height="39px" Text="Logout" Width="103px" OnClick="Button4_Click" />
+             </strong></h1>
+         <br class="auto-styleK1" />
          <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
              </asp:ContentPlaceHolder>
   
@@ -59,7 +84,8 @@
 
 </form>
 
- 
+ </body>
+
 
 
 </html>

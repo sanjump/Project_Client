@@ -21,7 +21,22 @@ namespace Project_Client
 
         protected void Button4_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Home_Login.aspx");
+            Response.Redirect("HomeLogin.aspx");
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AboutUs.aspx");
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("MyBookings.aspx");
+        }
+
+        protected void Button1_Click1(object sender, EventArgs e)
+        {
+            Response.Redirect("MyBookings.aspx");
         }
     }
 }

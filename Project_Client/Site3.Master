@@ -31,26 +31,38 @@
             color: #FF0000;
             width: 100%;
         }
+         .auto-style1 {
+             color: #FF0000;
+             height: 20px;
+         }
+         .auto-style2 {
+             color: #FF0000;
+             height: 7px;
+         }
+         .auto-style3 {
+             color: #FF0000;
+             height: 5px;
+         }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div class="auto-styleX">
          
-         <h1 class="auto-styleY">&nbsp;&nbsp;</h1>
+         <h1 class="auto-style1">&nbsp;&nbsp;</h1>
          <h1 class="auto-styleQ">
-             &nbsp;&nbsp;&nbsp;&nbsp;<asp:Image ID="Image1" runat="server" Height="77px" ImageUrl="~/company_logo.jpeg" Width="164px" />
-             &nbsp; <span class="auto-styleP">CloudWay </span>&nbsp;&nbsp;&nbsp;<strong><asp:Button ID="Button5" runat="server" CssClass="auto-styleZ" Height="39px" Text="All Flights" Width="103px" OnClick="Button5_Click" />
-             &nbsp;
-             <asp:Button ID="Button6" runat="server" CssClass="auto-styleZ" Height="39px" Text="Add Flight" Width="103px" OnClick="Button6_Click" />
-             &nbsp;
-             <asp:Button ID="Button9" runat="server" CssClass="auto-styleZ" Height="39px" Text="Flight Chart " Width="103px" OnClick="Button9_Click" />
-             &nbsp;
-             <asp:Button ID="Button4" runat="server" CssClass="auto-styleZ" Height="39px" Text="Logout" Width="103px" OnClick="Button4_Click" />
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Image ID="Image1" runat="server" Height="77px" ImageUrl="Assets/logo.jpeg" Width="164px" />
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><asp:Button ID="Button5" runat="server" CssClass="auto-styleZ" Height="39px" Text="All Flights" Width="103px" OnClick="Button5_Click" ValidationGroup="k" BackColor="#BBCADF" BorderColor="White" ForeColor="Black" />
+             &nbsp;&nbsp;&nbsp;
+             <asp:Button ID="Button6" runat="server" CssClass="auto-styleZ" Height="39px" Text="Add Flight" Width="103px" OnClick="Button6_Click" ValidationGroup="k" BackColor="#BBCADF" BorderColor="White" ForeColor="Black" />
+             &nbsp;&nbsp;&nbsp;
+             <asp:Button ID="Button9" runat="server" CssClass="auto-styleZ" Height="39px" Text="Flight Chart " Width="103px" OnClick="Button9_Click" ValidationGroup="k" BackColor="#BBCADF" BorderColor="White" ForeColor="Black" />
+             &nbsp;&nbsp;&nbsp;
+             <asp:Button ID="Button4" runat="server" CssClass="auto-styleZ" Height="39px" Text="Logout" Width="103px" OnClick="Button4_Click" ValidationGroup="k" BackColor="#BBCADF" BorderColor="White" ForeColor="Black" />
              &nbsp&nbsp&nbsp;</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&nbsp;
              </strong>&nbsp;&nbsp; &nbsp;</h1>
-         <p class="auto-styleY">&nbsp;</p>
-         <h1 class="auto-styleY">&nbsp;</h1>
+         <p class="auto-style2">&nbsp;</p>
+         <h1 class="auto-style3">&nbsp;</h1>
          <p class="auto-styleY">&nbsp;</p>
          
   

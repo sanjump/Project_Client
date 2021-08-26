@@ -9,8 +9,9 @@
 .master {
     margin: 0;
     padding: 0;
-    background-image: url("Assets/Flight.jpg");
-    background-size: cover;
+    background-image: url("../Assets/Flight.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     font-family: sans-serif;
 }
 

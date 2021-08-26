@@ -111,9 +111,9 @@ namespace Project_Client.DAL
             return flag;
         }
 
-        public int deleteflightdetailsbyid(string fid)
+        public int deleteflightdetailsbyid(string fid, string date)
         {
-            HttpResponseMessage response = cl.DeleteAsync(cl.BaseAddress + "/Admin/deleteflight?id=" + fid).Result;
+            HttpResponseMessage response = cl.DeleteAsync(cl.BaseAddress + "/Admin/deleteflight?id=" + fid + "&date=" + date).Result;
 
             if (response.IsSuccessStatusCode)
             {

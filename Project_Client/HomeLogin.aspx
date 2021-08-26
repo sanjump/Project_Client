@@ -8,29 +8,20 @@
 <html>
 <head >
     <title></title>
-    <style type="text/css">
-        .auto-style1 {
-            width: 100%;
-        }
-        .auto-style2 {
-            height: 30px;
-        }
-    </style>
     <meta charset="utf-8"/>
     <meta name ="viewport" content="width-device-width,initial-scale=1.0"/>
-   <link href='StyleSheet2.css' rel='stylesheet' type='text/css'/>
+   <link href='CSS/StyleSheet2.css' rel='stylesheet' type='text/css'/>
 
 </head>
 <body>
     
-    <
-        <div class="container">
+    &nbsp;<div class="container">
         <div class="card">
             <div class="circle">
                 <h1>Customer Login</h1>
                  </div>
             <div class="content">
-                <p> <img class="card-img-top" src="customer.png" alt="Card image" style="width:56%"/></p>
+                <p> <img class="card-img-top" src="Assets/customer.png" alt="Card image" style="width:56%"/></p>
                 <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">ClickHere</asp:LinkButton>
             </div>
            
@@ -41,7 +32,7 @@
                 
         </div>
             <div class="content">
-                   <p> <img class="card-img-top" src="admin.png" alt="Card image" style="width:56%"/></p>
+                   <p> <img class="card-img-top" src="Assets/admin.png" alt="Card image" style="width:56%"/></p>
                 <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">ClickHere</asp:LinkButton>
                 </div>
             </div>

@@ -28,14 +28,14 @@ namespace Project_Client
             obj.Passenger_id = new string(Enumerable.Repeat(chars, 10).Select(s => s[random.Next(s.Length)]).ToArray());
             obj.Flight_id = obj1.Flight_Id;
             obj.Date = obj1.Date;
-            obj.Name = TextBox4.Text;
-            obj.Age = TextBox5.Text;
+            obj.Name = TextBox1.Text;
+            obj.Age = TextBox2.Text;
             obj.Gender = RadioButtonList1.SelectedValue;
-            obj.Adhar_number = TextBox7.Text;
-            obj.Phone = TextBox8.Text;
-            obj.Email = TextBox9.Text;
+            obj.Adhar_number = TextBox4.Text;
+            obj.Phone = TextBox3.Text;
+            obj.Email = TextBox5.Text;
             obj.Meal_preference = RadioButtonList2.SelectedValue;
-            obj.Amount = obj1.Price;
+            obj.Amount = (Convert.ToInt32(Session["No_of_travallers"]) * Convert.ToInt32(obj1.Price)).ToString();
             if (Session["status"].ToString() == "Confirmed")
             {
                 obj.Status = "Confirmed";
@@ -45,7 +45,7 @@ namespace Project_Client
                 obj.Status = "Waiting List";
                 obj.WaitingList = Convert.ToInt32(Session["status"]);
             }
-
+            obj.No_of_Travellers = Convert.ToInt32(Session["No_of_travallers"]);
             Session["Passenger_details"] = obj;
             Response.Redirect("Seating.aspx");
         }
@@ -59,5 +59,17 @@ namespace Project_Client
         {
 
         }
+        protected void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+
+        }
+
+        protected void TextBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }
